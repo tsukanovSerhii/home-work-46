@@ -1,6 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 body {
-  @apply bg-slate-900 text-slate-100 min-h-screen antialiased;
-  font-family: system-ui, -apple-system, sans-serif;
+	@apply bg-slate-900 text-slate-100 min-h-screen antialiased;
+	font-family:
+		system-ui,
+		-apple-system,
+		sans-serif;
 }
