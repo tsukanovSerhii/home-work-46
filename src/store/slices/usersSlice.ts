@@ -25,6 +25,9 @@ const initialState: UsersState = {
 export const fetchUsers = createAsyncThunk(
   'users/fetchUsers',
   async () => {
+    // Штучна затримка для демонстрації стану 'pending' (завантаження)
+    await new Promise((resolve) => setTimeout(resolve, 1500))
+
     const response = await fetch('https://jsonplaceholder.typicode.com/users')
     if (!response.ok) {
       throw new Error('Failed to fetch users')
